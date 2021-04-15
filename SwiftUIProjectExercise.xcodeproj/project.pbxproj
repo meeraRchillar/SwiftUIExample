@@ -16,6 +16,7 @@
 		14BA5A1A26283112004A6140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BA5A1826283112004A6140 /* LaunchScreen.storyboard */; };
 		14BA5A2526283113004A6140 /* SwiftUIProjectExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA5A2426283113004A6140 /* SwiftUIProjectExerciseTests.swift */; };
 		14BA5A3026283113004A6140 /* SwiftUIProjectExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA5A2F26283113004A6140 /* SwiftUIProjectExerciseUITests.swift */; };
+		14BA5A4726285140004A6140 /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA5A4626285140004A6140 /* ModelClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		14BA5A2B26283113004A6140 /* SwiftUIProjectExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIProjectExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BA5A2F26283113004A6140 /* SwiftUIProjectExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIProjectExerciseUITests.swift; sourceTree = "<group>"; };
 		14BA5A3126283113004A6140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14BA5A4626285140004A6140 /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				14BA5A1B26283112004A6140 /* Info.plist */,
 				14BA5A102628310D004A6140 /* SwiftUIProjectExercise.xcdatamodeld */,
 				14BA5A1526283112004A6140 /* Preview Content */,
+				14BA5A4626285140004A6140 /* ModelClass.swift */,
 			);
 			path = SwiftUIProjectExercise;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BA5A4726285140004A6140 /* ModelClass.swift in Sources */,
 				14BA5A0B2628310D004A6140 /* AppDelegate.swift in Sources */,
 				14BA5A122628310D004A6140 /* SwiftUIProjectExercise.xcdatamodeld in Sources */,
 				14BA5A0D2628310D004A6140 /* SceneDelegate.swift in Sources */,
