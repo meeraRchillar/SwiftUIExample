@@ -15,9 +15,9 @@ struct ContentView: View {
 
    
     var body: some View {
-       
+        NavigationView {
         VStack{
-            Text("Let us find Peace").bold().font(.largeTitle).foregroundColor(.blue)
+//            Text("Let us find Peace").bold().font(.largeTitle).foregroundColor(.blue)
             
             Image("BackGround").resizable().aspectRatio(contentMode: .fit).cornerRadius(30).padding(.all)
             
@@ -28,17 +28,20 @@ struct ContentView: View {
                
 
                 List(self.mood_per_person,id: \.name){ mood in
+                  
+                   
                     ExtractedView_forCell(mood_var: mood)
+                    NavigationLink("", destination:PeaceCellDetailView(peaceDetails: mood))
                     
                    
-                    
+                }
+            
                 }.cornerRadius(20).border(Color.red, width: 0.5).padding()
                 
-                
-            
-                
-               
-            }
+              
+          
+        }
+        .navigationBarTitle("Find Peace")
         }
      
     }
@@ -55,16 +58,14 @@ struct ExtractedView_forCell: View {
     var body: some View {
         HStack{
             
-            Image("personIcon").resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/).cornerRadius(10)
+            Image("personIcon").resizable().frame(width: 50, height: 50).cornerRadius(5)
             VStack(alignment: .leading){
                 
                 Text(mood_var.name).bold()
-                Text("Anger:\(mood_var.Anger)")
-                Text("Happiness:\(mood_var.happiness)")
-                Text("Sadness:\(mood_var.sadness)")
+               
                 
                 
-            }.multilineTextAlignment(.leading)
+            }
             
             
         }.cornerRadius(30
