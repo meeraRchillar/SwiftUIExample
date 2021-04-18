@@ -9,20 +9,25 @@ import SwiftUI
 
 struct PeaceCellDetailView: View {
     let peaceDetails: Moods_per_Person
-    fileprivate func extractedFunc() -> VStack<TupleView<(Image, Text, Text, Text, Text, Text)>> {
-        return VStack {
-            Image("BackGround")
-            Text(peaceDetails.name)
+    
+    @State private var zoomFlag: Bool = false
+    var body: some View {
+    VStack {
+        Image("BackGround").resizable().aspectRatio(contentMode: self.zoomFlag ? .fill: .fit).onTapGesture {
+            withAnimation {
+                self.zoomFlag.toggle()
+            }
+           
+        }
+            
             Text(peaceDetails.Anger)
             Text(peaceDetails.Depression)
             Text(peaceDetails.happiness)
             Text(peaceDetails.sadness)
-        }
+    }.navigationBarTitle(peaceDetails.name,displayMode: .inline)
     }
     
-    var body: some View {
-        extractedFunc()
-    }
+   
 }
 
 struct PeaceCellDetailView_Previews: PreviewProvider {
