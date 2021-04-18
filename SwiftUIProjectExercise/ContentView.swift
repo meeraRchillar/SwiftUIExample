@@ -7,10 +7,11 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
- 
-        let mood_per_person =  Moods_per_Person.getAllMoods()
+    let mood_per_person =  Moods_per_Person.getAllMoods()
+        
 
    
     var body: some View {
@@ -27,22 +28,14 @@ struct ContentView: View {
                
 
                 List(self.mood_per_person,id: \.name){ mood in
-                    VStack{
-                        Text(mood.name).bold()
-                        Text("Anger:\(mood.Anger)")
-                        Text("Happiness:\(mood.happiness)")
-                        Text("Sadness:\(mood.sadness)")
-                        
-                    }.multilineTextAlignment(.leading)
+                    ExtractedView_forCell(mood_var: mood)
+                    
                    
                     
-                }.cornerRadius(30).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).padding(.all)
+                }.cornerRadius(20).border(Color.red, width: 0.5).padding()
                 
                 
-              //  List(mood_per_person,id(\.name) as! KeyPath<Moods_per_Person, [Moods_per_Person]?>){ mood_per_person in Text(mood_per_person.name)
-                    
-                    
-               // }
+            
                 
                
             }
@@ -54,5 +47,27 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct ExtractedView_forCell: View {
+    let mood_var: Moods_per_Person
+    var body: some View {
+        HStack{
+            
+            Image("personIcon").resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/).cornerRadius(10)
+            VStack(alignment: .leading){
+                
+                Text(mood_var.name).bold()
+                Text("Anger:\(mood_var.Anger)")
+                Text("Happiness:\(mood_var.happiness)")
+                Text("Sadness:\(mood_var.sadness)")
+                
+                
+            }.multilineTextAlignment(.leading)
+            
+            
+        }.cornerRadius(30
+        )
     }
 }
