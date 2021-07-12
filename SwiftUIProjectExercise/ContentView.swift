@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
         VStack{
-
+print("Github Testing")
             
             Image("BackGround").resizable().aspectRatio(contentMode: .fit).cornerRadius(30).padding(.all)
             
