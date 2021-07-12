@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
         VStack{
-//            Text("Let us find Peace").bold().font(.largeTitle).foregroundColor(.blue)
+
             
             Image("BackGround").resizable().aspectRatio(contentMode: .fit).cornerRadius(30).padding(.all)
             
