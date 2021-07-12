@@ -16,32 +16,38 @@ struct ContentView: View {
    
     var body: some View {
         NavigationView {
-        VStack{
-//            Text("Let us find Peace").bold().font(.largeTitle).foregroundColor(.blue)
-            
-            Image("BackGround").resizable().aspectRatio(contentMode: .fit).cornerRadius(30).padding(.all)
-            
-            Text("Survey")
-            Text("Samples").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-            
-            HStack{
-               
-
-                List(self.mood_per_person,id: \.name){ mood in
-                  
-                   
-                    ExtractedView_forCell(mood_var: mood)
-                    NavigationLink("", destination:PeaceCellDetailView(peaceDetails: mood))
+            VStack{
+                //            Text("Let us find Peace").bold().font(.largeTitle).foregroundColor(.blue)
+                
+                Image("BackGround").resizable().aspectRatio(contentMode: .fit).cornerRadius(30).padding(.all)
+                
+                Text("Survey")
+                Text("Samples").foregroundColor(.blue)
+                
+                HStack{
                     
-                   
-                }
-            
+                    
+                    List(self.mood_per_person,id: \.name){ mood in
+                        
+                        
+                        ExtractedView_forCell(mood_var: mood)
+                        if mood.name == "Meera" {
+                            NavigationLink("", destination:PeaceCellDetailView(peaceDetails: mood))
+                        }else {
+                            
+                            
+                            
+                        }
+                        
+                        
+                    }
+                    
                 }.cornerRadius(20).border(Color.red, width: 0.5).padding()
                 
-              
-          
-        }
-        .navigationBarTitle("Find Peace")
+                
+                
+            }
+            .navigationBarTitle("Find Peace")
         }
      
     }
