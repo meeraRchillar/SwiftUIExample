@@ -11,14 +11,12 @@ import SwiftUI
 struct ContentView: View {
     
     let mood_per_person =  Moods_per_Person.getAllMoods()
-        
-
-   
+      
     var body: some View {
         NavigationView {
         VStack{
-print("Github Testing")
-            
+
+            print("Test")
             Image("BackGround").resizable().aspectRatio(contentMode: .fit).cornerRadius(30).padding(.all)
             
             Text("Survey")

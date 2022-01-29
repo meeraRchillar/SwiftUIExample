@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1478876C27A577E200FC3EC1 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1478876B27A577E100FC3EC1 /* TestController.swift */; };
 		1492A73F262BD8B1004938BE /* PeaceCellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1492A73E262BD8B1004938BE /* PeaceCellDetailView.swift */; };
 		14BA5A0B2628310D004A6140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA5A0A2628310D004A6140 /* AppDelegate.swift */; };
 		14BA5A0D2628310D004A6140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA5A0C2628310D004A6140 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1478876B27A577E100FC3EC1 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		1492A73E262BD8B1004938BE /* PeaceCellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceCellDetailView.swift; sourceTree = "<group>"; };
 		14BA5A072628310D004A6140 /* SwiftUIProjectExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProjectExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BA5A0A2628310D004A6140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				14BA5A1526283112004A6140 /* Preview Content */,
 				14BA5A4626285140004A6140 /* ModelClass.swift */,
 				1492A73E262BD8B1004938BE /* PeaceCellDetailView.swift */,
+				1478876B27A577E100FC3EC1 /* TestController.swift */,
 			);
 			path = SwiftUIProjectExercise;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				14BA5A122628310D004A6140 /* SwiftUIProjectExercise.xcdatamodeld in Sources */,
 				14BA5A0D2628310D004A6140 /* SceneDelegate.swift in Sources */,
 				14BA5A0F2628310D004A6140 /* ContentView.swift in Sources */,
+				1478876C27A577E200FC3EC1 /* TestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
